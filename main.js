@@ -8,6 +8,8 @@ function correct(Q, A) {
         document.getElementById("correct").play()
         document.getElementById("Q" + Q + "A" + A).style.backgroundColor = "lightgreen";
         document.getElementById("Q" + Q + "A" + A).style.borderColor = "limegreen";
+        currenttext = document.getElementById("Q" + Q).innerHTML
+        document.getElementById("Q" + Q).innerHTML = currenttext + "<span style='float:right;'>✔️</span>";
         score = score + 10;
         done.push(Q);
         console.log(done);
@@ -23,6 +25,8 @@ function wrong(Q, A) {
         document.getElementById("wrong").play()
         document.getElementById("Q" + Q + "A" + A).style.backgroundColor = "lightsalmon";
         document.getElementById("Q" + Q + "A" + A).style.borderColor = "tomato";
+        currenttext = document.getElementById("Q" + Q).innerHTML
+        document.getElementById("Q" + Q).innerHTML = currenttext + "<span style='float:right;'>❌</span>";
         done.push(Q)
         console.log(done)
         attempted = attempted + 1;
