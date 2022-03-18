@@ -1,0 +1,40 @@
+.option {
+    background-color: deepskyblue;
+    border-color: dodgerblue;
+    padding: 10px;
+    margin: 5px;
+    width: 320px;
+}
+
+.option:hover {
+    background-color: dodgerblue;
+}
+
+.question {
+    background-color: lightgray;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0px 0px 20px;
+}
+
+#heading {
+    width: 100%;
+    background-color: mediumseagreen;
+    padding: 20px;
+    top: 0px;
+    height: 100px;
+    font-size: 36px;
+    vertical-align: middle;
+    margin-bottom: 50px;
+    box-shadow: 0px 0px 20px;
+    position: sticky;
+}
+
+#score {
+    padding: 10px;
+    float: right;
+}
+
+body {
+    background-image: url(https://previews.123rf.com/images/dimapolie/dimapolie1804/dimapolie180400100/99172019-vector-science-pattern-science-seamless-background.jpg);
+}

@@ -1,0 +1,122 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <audio src="correct.mp3" id="correct"></audio>
+    <audio src="wrong.mp3" id="wrong"></audio>
+    <center>
+        <div id="heading">
+            <p style="float:left;"><u><b>STEM Quiz</b></u></p>
+            <button class="btn btn-warning" id="score">Score: 0</button>
+        </div>
+        <div class="question btn" id="Q1">
+            <h4>Q. What does STEM stand for?</h4>
+            <button class="option btn" id="Q1A1" onclick="wrong(1,1)">Silence, Tao, Enigma, Magic</button>
+            <button class="option btn" id="Q1A2" onclick="correct(1,2)">Science, Technology, Engineering,
+                Mathematics</button>
+            <br>
+            <button class="option btn" id="Q1A3" onclick="wrong(1,3)">Starfish, Tongues, Ears, Mushrooms</button>
+            <button class="option btn" id="Q1A4" onclick="wrong(1,4)">None of the others</button>
+        </div>
+        <br>
+        <br>
+        <div class="question btn" id="Q2">
+            <h4>Q. What are animals with a backbone called?</h4>
+            <button class="option btn" id="Q2A1" onclick="correct(2,1)">Vertebrates</button>
+            <button class="option btn" id="Q2A2" onclick="wrong(2,2)">Invertebrates</button>
+            <br>
+            <button class="option btn" id="Q2A3" onclick="wrong(2,3)">Organisms</button>
+            <button class="option btn" id="Q2A4" onclick="wrong(2,4)">None of the others</button>
+        </div>
+        <br>
+        <br>
+        <div class="question btn" id="Q3">
+            <h4>Q. What is the element with the atomic number 69 on the periodic table?</h4>
+            <button class="option btn" id="Q3A1" onclick="wrong(3,1)">Uranium</button>
+            <button class="option btn" id="Q3A2" onclick="wrong(3,2)">Samarium</button>
+            <br>
+            <button class="option btn" id="Q3A3" onclick="correct(3,3)">Thulium</button>
+            <button class="option btn" id="Q3A4" onclick="wrong(3,4)">None of the others</button>
+        </div>
+        <br>
+        <br>
+        <div class="question btn" id="Q4">
+            <h4>Q. Geometry is the study of-</h4>
+            <button class="option btn" id="Q4A1" onclick="wrong(4,1)">Earth</button>
+            <button class="option btn" id="Q4A2" onclick="wrong(4,2)">Longitudes</button>
+            <br>
+            <button class="option btn" id="Q4A3" onclick="wrong(4,3)">The human body</button>
+            <button class="option btn" id="Q4A4" onclick="correct(4,4)">None of the others</button>
+        </div>
+        <br>
+        <br>
+        <div class="question btn" id="Q5">
+            <h4>Q. Which force keeps the planets in their orbits?</h4>
+            <button class="option btn" id="Q5A1" onclick="wrong(5,1)">Magnetic</button>
+            <button class="option btn" id="Q5A2" onclick="correct(5,2)">Gravitational</button>
+            <br>
+            <button class="option btn" id="Q5A3" onclick="wrong(5,3)">Centrifugal</button>
+            <button class="option btn" id="Q5A4" onclick="wrong(5,4)">None of the others</button>
+        </div>
+        <br>
+        <br>
+        <div class="question btn" id="Q6">
+            <h4>Q. Who invented Phonograph?</h4>
+            <button class="option btn" id="Q6A1" onclick="wrong(6,1)">Benjamin Franklin</button>
+            <button class="option btn" id="Q6A2" onclick="correct(6,2)">Thomas Edison</button>
+            <br>
+            <button class="option btn" id="Q6A3" onclick="wrong(6,3)">Joe Mama</button>
+            <button class="option btn" id="Q6A4" onclick="wrong(6,4)">None of the others</button>
+        </div>
+        <br>
+        <br>
+        <div class="question btn" id="Q7">
+            <h4>Q. Seismology is the study of-</h4>
+            <button class="option btn" id="Q7A1" onclick="wrong(7,1)">Hurricanes</button>
+            <button class="option btn" id="Q7A2" onclick="wrong(7,2)">Earth</button>
+            <br>
+            <button class="option btn" id="Q7A3" onclick="correct(7,3)">Earthquakes</button>
+            <button class="option btn" id="Q7A4" onclick="wrong(7,4)">None of the others</button>
+        </div>
+        <br>
+        <br>
+        <div class="question btn" id="Q8">
+            <h4>Q. Which kind of sun's rays cause the human skin to burn?</h4>
+            <button class="option btn" id="Q8A1" onclick="wrong(8,1)">Infrared</button>
+            <button class="option btn" id="Q8A2" onclick="correct(8,2)">Ultraviolet</button>
+            <br>
+            <button class="option btn" id="Q8A3" onclick="wrong(8,3)">Light rays</button>
+            <button class="option btn" id="Q8A4" onclick="wrong(8,4)">None of the others</button>
+        </div>
+        <br>
+        <br>
+        <div class="question btn" id="Q9">
+            <h4>Q. What does a calliber measure?</h4>
+            <button class="option btn" id="Q9A1" onclick="wrong(9,1)">Weight</button>
+            <button class="option btn" id="Q9A2" onclick="wrong(9,2)">Circumference</button>
+            <br>
+            <button class="option btn" id="Q9A3" onclick="wrong(9,3)">Area</button>
+            <button class="option btn" id="Q9A4" onclick="correct(9,4)">None of the others</button>
+        </div>
+        <br>
+        <br>
+        <div class="question btn" id="Q10">
+            <h4>Q. What force causes resistance when two surfaces slide against each other?</h4>
+            <button class="option btn" id="Q10A1" onclick="correct(10,1)">Friction</button>
+            <button class="option btn" id="Q10A2" onclick="wrong(10,2)">Torque</button>
+            <br>
+            <button class="option btn" id="Q10A3" onclick="wrong(10,3)">Magnetic</button>
+            <button class="option btn" id="Q10A4" onclick="wrong(10,4)">None of the others</button>
+        </div>
+    </center>
+</body>
+
+</html>
