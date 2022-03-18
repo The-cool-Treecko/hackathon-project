@@ -1,7 +1,5 @@
 var score = 0;
 var done = [0];
-var attempted = 0;
-var notattempted = 10;
 
 function correct(Q, A) {
     if (done.includes(Q) == false) {
@@ -15,8 +13,6 @@ function correct(Q, A) {
         console.log(done);
         console.log(score);
         document.getElementById("score").innerHTML = "Score: " + score;
-        attempted = attempted + 1;
-        notattempted = notattempted - 1;
     }
 }
 
@@ -29,7 +25,5 @@ function wrong(Q, A) {
         document.getElementById("Q" + Q).innerHTML = currenttext + "<span style='float:right;'>❌</span>";
         done.push(Q)
         console.log(done)
-        attempted = attempted + 1;
-        notattempted = notattempted - 1;
     }
 }
